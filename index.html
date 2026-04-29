@@ -249,7 +249,7 @@ p  { font-size: 16px; font-weight: 400; line-height: 1.65; }
         <div style="position:absolute; left:-45px; top:5px; width:12px; height:12px; border-radius:50%; background:#97CA6F; border:2px solid #101010;"></div>
         <span style="font-family:monospace; font-size:11px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#97CA6F;">/vru-scan</span>
         <h3 style="color:#fff; font-size:17px; font-weight:400; margin-top:6px; margin-bottom:8px;">Scan for signals</h3>
-        <p style="color:rgba(255,255,255,0.55); font-size:15px; line-height:1.7; max-width:700px;">Scans Slack, EVO, Google Drive, and Gong transcripts using the VRU signal library. Returns a ranked list of opportunities with a recommended next step for each. Runs on demand or on a schedule.</p>
+        <p style="color:rgba(255,255,255,0.55); font-size:15px; line-height:1.7; max-width:700px;">Scans Slack, EVO, Google Drive, and Gong transcripts using the VRU signal library. Returns a ranked list of opportunities with a recommended next step for each. Runs on demand or triggered manually by the team.</p>
       </div>
 
       <div style="position:relative; padding-bottom:36px;">
@@ -437,7 +437,7 @@ p  { font-size: 16px; font-weight: 400; line-height: 1.65; }
             </div>
           </div>
         </div>
-        <p style="font-size:11px; color:rgba(255,255,255,0.25); margin-top:10px; font-style:italic;">Automated daily digest — posted each morning by the VRU Claude agent</p>
+        <p style="font-size:11px; color:rgba(255,255,255,0.25); margin-top:10px; font-style:italic;">Automated daily digest — triggered by a Google Apps Script connected to the VRU Board via API key</p>
       </div>
 
     </div>
@@ -594,8 +594,8 @@ p  { font-size: 16px; font-weight: 400; line-height: 1.65; }
         <div style="display:flex; flex-direction:column; gap:0; border-left:2px solid rgba(151,202,111,0.18); padding-left:22px;">
           <div style="position:relative; padding-bottom:20px;">
             <div style="position:absolute; left:-28px; top:5px; width:8px; height:8px; border-radius:50%; background:#97CA6F; border:2px solid #111111;"></div>
-            <p style="font-size:15px; font-weight:500; color:#fff; margin-bottom:4px;">Claude scans on a schedule</p>
-            <p style="font-size:14px; color:rgba(255,255,255,0.45); line-height:1.65;">Runs /vru-scan across all connected sources. Returns a ranked signal list within minutes.</p>
+            <p style="font-size:15px; font-weight:500; color:#fff; margin-bottom:4px;">Claude scans on demand</p>
+            <p style="font-size:14px; color:rgba(255,255,255,0.45); line-height:1.65;">Runs /vru-scan across all connected sources. The daily Slack digest is triggered separately via a Google Apps Script connected to the VRU Board.</p>
           </div>
           <div style="position:relative; padding-bottom:20px;">
             <div style="position:absolute; left:-28px; top:5px; width:8px; height:8px; border-radius:50%; background:#97CA6F; border:2px solid #111111;"></div>
